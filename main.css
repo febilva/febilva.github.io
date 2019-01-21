@@ -1,66 +1,35 @@
-.main1{
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container {
+    max-width: 730px;
+}
+.container {
+    width: 1170px;
+}
+.container {
+    width: 970px;
+}
+.container {
+    width: 750px;
+}
+.main{
     display: grid;
-    margin: 10vh 23vw;
-    margin-top: 10vh;
-    margin-right: 23vw;
-    margin-bottom: 10vh;
-    margin-left: 23vw;
-    width: 80vw;
-    align-items: center;
-    grid-gap: 1em;
-    /* grid-row-gap: 1em; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: 225px 225px; */
-    grid-template-columns: repeat(6, 5vw);
-    justify-items: center;
-    /* height: 80vh; */
-    /* height: 80vh; */
+    grid-template-columns: repeat(12, 1fr); /* Repeat columns without needing to write them */
+    grid-template-rows: 1rem 10% auto repeat(5, 10px); /* Mix any group, same rules work for rows */
 }
 
-.main1 > div{
-    /* background: lime; */
-    /* width: 100%; */
-    /* padding: 1em; */
-}
-
-.square1 {
-    grid-row: 2,3;
-    grid-column: 1,2;
+.sidebar{
+    grid-column: 1/4;
+    grid-row: 1/12;
+    height: 100px;
     background: lime;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    /* padding:  */
 }
-/* .square2 {
-    grid-row: 1,2;
-    grid-column: 2,3;
-    background: rgb(9, 42, 114);    
-    background-size: cover;
-    width: 100%;
-    height: 100%; */
-    /* padding:  */
-/* } */
-.square3 {
-    grid-row: 3,4;
-    grid-column: 2,3;
-    background: #177d20;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    /* padding:  */
-}
-/* .square4 {
-    grid-row: 2,3;
-    grid-column: 2,3;
-    background: blue;
-    background-size: cover;
-    width: 100%;
-    height: 100%; */
-    /* padding:  */
-/* } */
-.heading {
-
-grid-column-start: span 3;
-
+.grid-small-box{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background: yellowgreen;
 }
