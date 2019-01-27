@@ -24,7 +24,7 @@
     grid-template-columns: repeat(4, 1fr 1fr 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
   grid-gap: 1em;
-  height: 500px;
+  height: 90vh;
     /* grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: repeat(auto-fill, 100px);
   grid-gap: 20px;
@@ -50,7 +50,17 @@
 }
 .coulumn2{
     grid-area: 2/5/6/7;
+    background: #f91a69;
+}
+
+.round_big{
+    order: 1;
+    z-index: 1;
+    grid-area: 2/5/4/7;
+    -webkit-clip-path: circle(47.9% at 85% 11%);
+    clip-path: circle(47.9% at 85% 11%);
     background: white;
+    height: 100px;
 }
 .coulumn3{
     grid-area: 2/7/6/9;
@@ -84,4 +94,10 @@ clip-path: circle(50.0% at 2% 2%);
     clip-path: circle(35.8% at 100% 100%);
     height: 150px;
     background: lime;
+}
+
+.center_circle{
+    grid-area: 4/5/6/6;
+    background-color: lime;
+    shape-outside: circle(22px at center center);
 }
