@@ -3,6 +3,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    height: 100vh;
 }
 /* .container {
     max-width: 730px;
@@ -69,7 +70,7 @@ clip-path: circle(50.0% at 2% 2%);
 }
 
 .heading{
-    grid-area: 2/3/6/5;
+    grid-area: 4/3/5/5;
     align-self: center;
     justify-self: center;
     margin: 10px;
@@ -79,8 +80,8 @@ clip-path: circle(50.0% at 2% 2%);
 .footer_circle{
     align-self: end;
     grid-area: 2/3/6/5;
-    -webkit-clip-path: circle(70.7% at 100% 100%);
-clip-path: circle(70.7% at 100% 100%);
-height: 100px;
-background: lime;
+    -webkit-clip-path: circle(35.8% at 100% 100%);
+    clip-path: circle(35.8% at 100% 100%);
+    height: 150px;
+    background: lime;
 }
