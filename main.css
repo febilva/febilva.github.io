@@ -24,7 +24,7 @@
     grid-template-columns: repeat(4, 1fr 1fr 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
   grid-gap: 1em;
-  height: 90vh;
+  height: 50vh;
     /* grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: repeat(auto-fill, 100px);
   grid-gap: 20px;
@@ -97,7 +97,26 @@ clip-path: circle(50.0% at 2% 2%);
 }
 
 .center_circle{
+    height: 100px;
     grid-area: 4/5/6/6;
-    background-color: lime;
-    shape-outside: circle(22px at center center);
+    /* align-items: center; */
+    order: 1;
+    z-index: 4;
+    /* justify-self: center; */
+    /* justify-content: center; */
+    background-color: white;
+    clip-path: circle(47px at 0px 48px);
+    
+}
+.footer_circle_column{
+    grid-area: 4/6/7/7;
+    clip-path: circle(56px at 82px 137px);
+    background: white;
+}
+.dim_circle{
+    grid-area: 2/5/4/6;
+    background: #fff9;
+    clip-path: circle(18px at 53px 75px);
+    /* height: 100px */
+    /* background: lime; */
 }
